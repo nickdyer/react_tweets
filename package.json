@@ -16,9 +16,9 @@
     "express-handlebars": "~1.1.0",
     "mongoose": "^3.8.17",
     "node-jsx": "~0.11.0",
-    "ntwitter": "^0.5.0",
     "react": "~0.11.2",
-    "socket.io": "^1.1.0"
+    "socket.io": "^1.1.0",
+    "twit": "^1.1.20"
   },
   "devDependencies": {
     "browserify": "~6.0.3",
