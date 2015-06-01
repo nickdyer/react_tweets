@@ -6,7 +6,7 @@ var Loader = require('./Loader.react.js');
 var NotificationBar = require('./NotificationBar.react.js');
 
 
-module.exports = TweetsApp = React.createclass({
+module.exports = TweetsApp = React.createClass({
 
   render: function() {
 

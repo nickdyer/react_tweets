@@ -18,7 +18,7 @@ module.exports = function(stream,io) {
 
     tweetEntry.save(function(err) {
       if(!err) {
-        io.emit.('tweet', tweet);
+        io.emit('tweet', tweet);
       }
     });
 
