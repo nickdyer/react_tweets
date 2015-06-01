@@ -8,7 +8,7 @@ var express = require('express'),
     streamHandler = require('./utils/streamHandler');
 
 var app = express();
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -31,7 +31,7 @@ var server = http.createServer(app).listen(port, function() {
 
 var io = require('socket.io').listen(server);
 
-T.stream('statuses/filter',{ track: 'scotch_io, #scotchio'}, function(stream) {
-  streamHandler(stream, io);
-});
+var stream = T.stream('statuses/filter', { track: '#BBCNews' });
+
+streamHandler(stream, io);
 

@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/nickbdyer/projects/react_tutorial/app.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /** @jsx React.DOM */
 
 var React = require('react');
@@ -11,7 +11,7 @@ React.renderComponent(
   document.getElementById('react-app')
 );
 
-},{"./components/TweetsApp.react":"/Users/nickbdyer/projects/react_tutorial/components/TweetsApp.react.js","react":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/react.js"}],"/Users/nickbdyer/projects/react_tutorial/components/Loader.react.js":[function(require,module,exports){
+},{"./components/TweetsApp.react":6,"react":150}],2:[function(require,module,exports){
 /** @jsx React.DOM */
 
 var React = require('react');
@@ -26,7 +26,7 @@ module.exports = Loader = React.createClass({displayName: 'Loader',
   }
 });
 
-},{"react":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/react.js"}],"/Users/nickbdyer/projects/react_tutorial/components/NotificationBar.react.js":[function(require,module,exports){
+},{"react":150}],3:[function(require,module,exports){
 /** @jsx React.DOM */
 
 var React = require('react');
@@ -43,7 +43,7 @@ module.exports = NotificationBar = React.createClass({displayName: 'Notification
 });
 
 
-},{"react":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/react.js"}],"/Users/nickbdyer/projects/react_tutorial/components/Tweet.react.js":[function(require,module,exports){
+},{"react":150}],4:[function(require,module,exports){
 /** @jsx React.DOM */
 
 var React = require('react');
@@ -68,7 +68,7 @@ module.exports = Tweet = React.createClass({displayName: 'Tweet',
 });
 
 
-},{"react":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/react.js"}],"/Users/nickbdyer/projects/react_tutorial/components/Tweets.react.js":[function(require,module,exports){
+},{"react":150}],5:[function(require,module,exports){
 /** @jsx React.DOM */
 
 var React = require('react');
@@ -92,7 +92,7 @@ module.exports = Tweets = React.createClass({displayName: 'Tweets',
 });
 
 
-},{"./Tweet.react.js":"/Users/nickbdyer/projects/react_tutorial/components/Tweet.react.js","react":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/react.js"}],"/Users/nickbdyer/projects/react_tutorial/components/TweetsApp.react.js":[function(require,module,exports){
+},{"./Tweet.react.js":4,"react":150}],6:[function(require,module,exports){
 /** @jsx React.DOM */
 
 var React = require('react');
@@ -175,7 +175,7 @@ module.exports = TweetsApp = React.createClass({displayName: 'TweetsApp',
   checkWindowScroll: function() {
 
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    var s = documetn.body.scrollTop;
+    var s = document.body.scrollTop;
     var scrolled = (h + s) > document.body.offsetHeight;
 
     if(scrolled && !this.state.paging && !this.state.done) {
@@ -231,7 +231,7 @@ module.exports = TweetsApp = React.createClass({displayName: 'TweetsApp',
 });
 
 
-},{"./Loader.react.js":"/Users/nickbdyer/projects/react_tutorial/components/Loader.react.js","./NotificationBar.react.js":"/Users/nickbdyer/projects/react_tutorial/components/NotificationBar.react.js","./Tweets.react.js":"/Users/nickbdyer/projects/react_tutorial/components/Tweets.react.js","react":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/react.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/AutoFocusMixin.js":[function(require,module,exports){
+},{"./Loader.react.js":2,"./NotificationBar.react.js":3,"./Tweets.react.js":5,"react":150}],7:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -265,7 +265,7 @@ var AutoFocusMixin = {
 
 module.exports = AutoFocusMixin;
 
-},{"./focusNode":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/focusNode.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/BeforeInputEventPlugin.js":[function(require,module,exports){
+},{"./focusNode":112}],8:[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
  *
@@ -489,7 +489,7 @@ var BeforeInputEventPlugin = {
 
 module.exports = BeforeInputEventPlugin;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./SyntheticInputEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticInputEvent.js","./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CSSProperty.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPropagators":26,"./ExecutionEnvironment":27,"./SyntheticInputEvent":92,"./keyOf":133}],9:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -612,7 +612,7 @@ var CSSProperty = {
 
 module.exports = CSSProperty;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CSSPropertyOperations.js":[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -711,7 +711,7 @@ var CSSPropertyOperations = {
 
 module.exports = CSSPropertyOperations;
 
-},{"./CSSProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CSSProperty.js","./dangerousStyleValue":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/dangerousStyleValue.js","./hyphenateStyleName":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/hyphenateStyleName.js","./memoizeStringOnly":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/memoizeStringOnly.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CallbackQueue.js":[function(require,module,exports){
+},{"./CSSProperty":9,"./dangerousStyleValue":107,"./hyphenateStyleName":124,"./memoizeStringOnly":135}],11:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -818,7 +818,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 module.exports = CallbackQueue;
 
 }).call(this,require('_process'))
-},{"./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ChangeEventPlugin.js":[function(require,module,exports){
+},{"./PooledClass":32,"./invariant":126,"./mixInto":139,"_process":151}],12:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -1207,7 +1207,7 @@ var ChangeEventPlugin = {
 
 module.exports = ChangeEventPlugin;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginHub.js","./EventPropagators":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./ReactUpdates":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactUpdates.js","./SyntheticEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js","./isEventSupported":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isEventSupported.js","./isTextInputElement":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ClientReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPluginHub":23,"./EventPropagators":26,"./ExecutionEnvironment":27,"./ReactUpdates":82,"./SyntheticEvent":90,"./isEventSupported":127,"./isTextInputElement":129,"./keyOf":133}],13:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -1239,7 +1239,7 @@ var ClientReactRootIndex = {
 
 module.exports = ClientReactRootIndex;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CompositionEventPlugin.js":[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -1505,7 +1505,7 @@ var CompositionEventPlugin = {
 
 module.exports = CompositionEventPlugin;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPropagators.js","./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./ReactInputSelection":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInputSelection.js","./SyntheticCompositionEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticCompositionEvent.js","./getTextContentAccessor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getTextContentAccessor.js","./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMChildrenOperations.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPropagators":26,"./ExecutionEnvironment":27,"./ReactInputSelection":64,"./SyntheticCompositionEvent":88,"./getTextContentAccessor":121,"./keyOf":133}],15:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -1687,7 +1687,7 @@ var DOMChildrenOperations = {
 module.exports = DOMChildrenOperations;
 
 }).call(this,require('_process'))
-},{"./Danger":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/Danger.js","./ReactMultiChildUpdateTypes":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./getTextContentAccessor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getTextContentAccessor.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js":[function(require,module,exports){
+},{"./Danger":18,"./ReactMultiChildUpdateTypes":69,"./getTextContentAccessor":121,"./invariant":126,"_process":151}],16:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -1989,7 +1989,7 @@ var DOMProperty = {
 module.exports = DOMProperty;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMPropertyOperations.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],17:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -2186,7 +2186,7 @@ var DOMPropertyOperations = {
 module.exports = DOMPropertyOperations;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js","./escapeTextForBrowser":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/escapeTextForBrowser.js","./memoizeStringOnly":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/memoizeStringOnly.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/Danger.js":[function(require,module,exports){
+},{"./DOMProperty":16,"./escapeTextForBrowser":110,"./memoizeStringOnly":135,"./warning":149,"_process":151}],18:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -2377,7 +2377,7 @@ var Danger = {
 module.exports = Danger;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./createNodesFromMarkup":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/createNodesFromMarkup.js","./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js","./getMarkupWrap":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DefaultEventPluginOrder.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27,"./createNodesFromMarkup":106,"./emptyFunction":108,"./getMarkupWrap":118,"./invariant":126,"_process":151}],19:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -2424,7 +2424,7 @@ var DefaultEventPluginOrder = [
 
 module.exports = DefaultEventPluginOrder;
 
-},{"./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EnterLeaveEventPlugin.js":[function(require,module,exports){
+},{"./keyOf":133}],20:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -2571,7 +2571,7 @@ var EnterLeaveEventPlugin = {
 
 module.exports = EnterLeaveEventPlugin;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPropagators.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./SyntheticMouseEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticMouseEvent.js","./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPropagators":26,"./ReactMount":67,"./SyntheticMouseEvent":94,"./keyOf":133}],21:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -2650,7 +2650,7 @@ var EventConstants = {
 
 module.exports = EventConstants;
 
-},{"./keyMirror":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventListener.js":[function(require,module,exports){
+},{"./keyMirror":132}],22:[function(require,module,exports){
 (function (process){
 /**
  * @providesModule EventListener
@@ -2726,7 +2726,7 @@ var EventListener = {
 module.exports = EventListener;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginHub.js":[function(require,module,exports){
+},{"./emptyFunction":108,"_process":151}],23:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -3020,7 +3020,7 @@ var EventPluginHub = {
 module.exports = EventPluginHub;
 
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginUtils.js","./accumulate":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/accumulate.js","./forEachAccumulated":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./isEventSupported":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isEventSupported.js","./monitorCodeUse":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/monitorCodeUse.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginRegistry.js":[function(require,module,exports){
+},{"./EventPluginRegistry":24,"./EventPluginUtils":25,"./accumulate":100,"./forEachAccumulated":113,"./invariant":126,"./isEventSupported":127,"./monitorCodeUse":140,"_process":151}],24:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -3307,7 +3307,7 @@ var EventPluginRegistry = {
 module.exports = EventPluginRegistry;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginUtils.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],25:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -3535,7 +3535,7 @@ var EventPluginUtils = {
 module.exports = EventPluginUtils;
 
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPropagators.js":[function(require,module,exports){
+},{"./EventConstants":21,"./invariant":126,"_process":151}],26:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -3682,7 +3682,7 @@ var EventPropagators = {
 module.exports = EventPropagators;
 
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginHub.js","./accumulate":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/accumulate.js","./forEachAccumulated":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/forEachAccumulated.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPluginHub":23,"./accumulate":100,"./forEachAccumulated":113,"_process":151}],27:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -3734,7 +3734,7 @@ var ExecutionEnvironment = {
 
 module.exports = ExecutionEnvironment;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/HTMLDOMPropertyConfig.js":[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -3925,7 +3925,7 @@ var HTMLDOMPropertyConfig = {
 
 module.exports = HTMLDOMPropertyConfig;
 
-},{"./DOMProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js","./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/LinkedValueUtils.js":[function(require,module,exports){
+},{"./DOMProperty":16,"./ExecutionEnvironment":27}],29:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -4088,7 +4088,7 @@ var LinkedValueUtils = {
 module.exports = LinkedValueUtils;
 
 }).call(this,require('_process'))
-},{"./ReactPropTypes":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypes.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/LocalEventTrapMixin.js":[function(require,module,exports){
+},{"./ReactPropTypes":75,"./invariant":126,"_process":151}],30:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014 Facebook, Inc.
@@ -4144,7 +4144,7 @@ var LocalEventTrapMixin = {
 module.exports = LocalEventTrapMixin;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserEventEmitter":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserEventEmitter.js","./accumulate":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/accumulate.js","./forEachAccumulated":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/forEachAccumulated.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/MobileSafariClickEventPlugin.js":[function(require,module,exports){
+},{"./ReactBrowserEventEmitter":35,"./accumulate":100,"./forEachAccumulated":113,"./invariant":126,"_process":151}],31:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -4209,7 +4209,7 @@ var MobileSafariClickEventPlugin = {
 
 module.exports = MobileSafariClickEventPlugin;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js":[function(require,module,exports){
+},{"./EventConstants":21,"./emptyFunction":108}],32:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -4332,7 +4332,7 @@ var PooledClass = {
 module.exports = PooledClass;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/React.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],33:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -4487,7 +4487,7 @@ React.version = '0.11.2';
 module.exports = React;
 
 }).call(this,require('_process'))
-},{"./DOMPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMPropertyOperations.js","./EventPluginUtils":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginUtils.js","./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./ReactChildren":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactChildren.js","./ReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponent.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactContext":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCurrentOwner.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./ReactDOMComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMComponent.js","./ReactDefaultInjection":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultInjection.js","./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactInstanceHandles":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./ReactPropTypes":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypes.js","./ReactServerRendering":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactServerRendering.js","./ReactTextComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactTextComponent.js","./onlyChild":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/onlyChild.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js":[function(require,module,exports){
+},{"./DOMPropertyOperations":17,"./EventPluginUtils":25,"./ExecutionEnvironment":27,"./ReactChildren":36,"./ReactComponent":37,"./ReactCompositeComponent":39,"./ReactContext":40,"./ReactCurrentOwner":41,"./ReactDOM":42,"./ReactDOMComponent":44,"./ReactDefaultInjection":54,"./ReactDescriptor":57,"./ReactInstanceHandles":65,"./ReactMount":67,"./ReactMultiChild":68,"./ReactPerf":71,"./ReactPropTypes":75,"./ReactServerRendering":79,"./ReactTextComponent":81,"./onlyChild":141,"./warning":149,"_process":151}],34:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -4537,7 +4537,7 @@ var ReactBrowserComponentMixin = {
 module.exports = ReactBrowserComponentMixin;
 
 }).call(this,require('_process'))
-},{"./ReactEmptyComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEmptyComponent.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserEventEmitter.js":[function(require,module,exports){
+},{"./ReactEmptyComponent":59,"./ReactMount":67,"./invariant":126,"_process":151}],35:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -4899,7 +4899,7 @@ var ReactBrowserEventEmitter = merge(ReactEventEmitterMixin, {
 
 module.exports = ReactBrowserEventEmitter;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPluginHub":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginRegistry.js","./ReactEventEmitterMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEventEmitterMixin.js","./ViewportMetrics":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ViewportMetrics.js","./isEventSupported":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isEventSupported.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactChildren.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPluginHub":23,"./EventPluginRegistry":24,"./ReactEventEmitterMixin":61,"./ViewportMetrics":99,"./isEventSupported":127,"./merge":136}],36:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -5056,7 +5056,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 }).call(this,require('_process'))
-},{"./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./traverseAllChildren":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponent.js":[function(require,module,exports){
+},{"./PooledClass":32,"./traverseAllChildren":148,"./warning":149,"_process":151}],37:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -5506,7 +5506,7 @@ var ReactComponent = {
 module.exports = ReactComponent;
 
 }).call(this,require('_process'))
-},{"./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactOwner.js","./ReactUpdates":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactUpdates.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./keyMirror":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponentBrowserEnvironment.js":[function(require,module,exports){
+},{"./ReactDescriptor":57,"./ReactOwner":70,"./ReactUpdates":82,"./invariant":126,"./keyMirror":132,"./merge":136,"_process":151}],38:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -5635,7 +5635,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 }).call(this,require('_process'))
-},{"./ReactDOMIDOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMIDOperations.js","./ReactMarkupChecksum":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMarkupChecksum.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./ReactReconcileTransaction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactReconcileTransaction.js","./getReactRootElementInContainer":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getReactRootElementInContainer.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/setInnerHTML.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js":[function(require,module,exports){
+},{"./ReactDOMIDOperations":46,"./ReactMarkupChecksum":66,"./ReactMount":67,"./ReactPerf":71,"./ReactReconcileTransaction":77,"./getReactRootElementInContainer":120,"./invariant":126,"./setInnerHTML":144,"_process":151}],39:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -7064,7 +7064,7 @@ var ReactCompositeComponent = {
 module.exports = ReactCompositeComponent;
 
 }).call(this,require('_process'))
-},{"./ReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponent.js","./ReactContext":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCurrentOwner.js","./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactDescriptorValidator":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptorValidator.js","./ReactEmptyComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEmptyComponent.js","./ReactErrorUtils":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactErrorUtils.js","./ReactOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactOwner.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./ReactPropTransferer":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTransferer.js","./ReactPropTypeLocationNames":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypeLocations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypeLocations.js","./ReactUpdates":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./keyMirror":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js","./mapObject":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mapObject.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js","./monitorCodeUse":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/monitorCodeUse.js","./shouldUpdateReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactContext.js":[function(require,module,exports){
+},{"./ReactComponent":37,"./ReactContext":40,"./ReactCurrentOwner":41,"./ReactDescriptor":57,"./ReactDescriptorValidator":58,"./ReactEmptyComponent":59,"./ReactErrorUtils":60,"./ReactOwner":70,"./ReactPerf":71,"./ReactPropTransferer":72,"./ReactPropTypeLocationNames":73,"./ReactPropTypeLocations":74,"./ReactUpdates":82,"./instantiateReactComponent":125,"./invariant":126,"./keyMirror":132,"./mapObject":134,"./merge":136,"./mixInto":139,"./monitorCodeUse":140,"./shouldUpdateReactComponent":146,"./warning":149,"_process":151}],40:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -7133,7 +7133,7 @@ var ReactContext = {
 
 module.exports = ReactContext;
 
-},{"./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCurrentOwner.js":[function(require,module,exports){
+},{"./merge":136}],41:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -7174,7 +7174,7 @@ var ReactCurrentOwner = {
 
 module.exports = ReactCurrentOwner;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js":[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -7389,7 +7389,7 @@ ReactDOM.injection = injection;
 module.exports = ReactDOM;
 
 }).call(this,require('_process'))
-},{"./ReactDOMComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMComponent.js","./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactDescriptorValidator":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptorValidator.js","./mapObject":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mapObject.js","./mergeInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mergeInto.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMButton.js":[function(require,module,exports){
+},{"./ReactDOMComponent":44,"./ReactDescriptor":57,"./ReactDescriptorValidator":58,"./mapObject":134,"./mergeInto":138,"_process":151}],43:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -7460,7 +7460,7 @@ var ReactDOMButton = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMButton;
 
-},{"./AutoFocusMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/AutoFocusMixin.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./keyMirror":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMComponent.js":[function(require,module,exports){
+},{"./AutoFocusMixin":7,"./ReactBrowserComponentMixin":34,"./ReactCompositeComponent":39,"./ReactDOM":42,"./keyMirror":132}],44:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -7882,7 +7882,7 @@ mixInto(ReactDOMComponent, ReactBrowserComponentMixin);
 module.exports = ReactDOMComponent;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CSSPropertyOperations.js","./DOMProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMPropertyOperations.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactBrowserEventEmitter":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponent.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./ReactMultiChild":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMultiChild.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./escapeTextForBrowser":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/escapeTextForBrowser.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMForm.js":[function(require,module,exports){
+},{"./CSSPropertyOperations":10,"./DOMProperty":16,"./DOMPropertyOperations":17,"./ReactBrowserComponentMixin":34,"./ReactBrowserEventEmitter":35,"./ReactComponent":37,"./ReactMount":67,"./ReactMultiChild":68,"./ReactPerf":71,"./escapeTextForBrowser":110,"./invariant":126,"./keyOf":133,"./merge":136,"./mixInto":139,"_process":151}],45:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -7938,7 +7938,7 @@ var ReactDOMForm = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMForm;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMIDOperations.js":[function(require,module,exports){
+},{"./EventConstants":21,"./LocalEventTrapMixin":30,"./ReactBrowserComponentMixin":34,"./ReactCompositeComponent":39,"./ReactDOM":42}],46:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -8131,7 +8131,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 }).call(this,require('_process'))
-},{"./CSSPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CSSPropertyOperations.js","./DOMChildrenOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMChildrenOperations.js","./DOMPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMPropertyOperations.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./setInnerHTML":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/setInnerHTML.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMImg.js":[function(require,module,exports){
+},{"./CSSPropertyOperations":10,"./DOMChildrenOperations":15,"./DOMPropertyOperations":17,"./ReactMount":67,"./ReactPerf":71,"./invariant":126,"./setInnerHTML":144,"_process":151}],47:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -8185,7 +8185,7 @@ var ReactDOMImg = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMImg;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./LocalEventTrapMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/LocalEventTrapMixin.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMInput.js":[function(require,module,exports){
+},{"./EventConstants":21,"./LocalEventTrapMixin":30,"./ReactBrowserComponentMixin":34,"./ReactCompositeComponent":39,"./ReactDOM":42}],48:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -8371,7 +8371,7 @@ var ReactDOMInput = ReactCompositeComponent.createClass({
 module.exports = ReactDOMInput;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/LinkedValueUtils.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMOption.js":[function(require,module,exports){
+},{"./AutoFocusMixin":7,"./DOMPropertyOperations":17,"./LinkedValueUtils":29,"./ReactBrowserComponentMixin":34,"./ReactCompositeComponent":39,"./ReactDOM":42,"./ReactMount":67,"./invariant":126,"./merge":136,"_process":151}],49:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -8430,7 +8430,7 @@ var ReactDOMOption = ReactCompositeComponent.createClass({
 module.exports = ReactDOMOption;
 
 }).call(this,require('_process'))
-},{"./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMSelect.js":[function(require,module,exports){
+},{"./ReactBrowserComponentMixin":34,"./ReactCompositeComponent":39,"./ReactDOM":42,"./warning":149,"_process":151}],50:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -8613,7 +8613,7 @@ var ReactDOMSelect = ReactCompositeComponent.createClass({
 
 module.exports = ReactDOMSelect;
 
-},{"./AutoFocusMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/AutoFocusMixin.js","./LinkedValueUtils":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/LinkedValueUtils.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMSelection.js":[function(require,module,exports){
+},{"./AutoFocusMixin":7,"./LinkedValueUtils":29,"./ReactBrowserComponentMixin":34,"./ReactCompositeComponent":39,"./ReactDOM":42,"./merge":136}],51:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -8829,7 +8829,7 @@ var ReactDOMSelection = {
 
 module.exports = ReactDOMSelection;
 
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./getNodeForCharacterOffset":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getTextContentAccessor.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMTextarea.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27,"./getNodeForCharacterOffset":119,"./getTextContentAccessor":121}],52:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -8975,7 +8975,7 @@ var ReactDOMTextarea = ReactCompositeComponent.createClass({
 module.exports = ReactDOMTextarea;
 
 }).call(this,require('_process'))
-},{"./AutoFocusMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/AutoFocusMixin.js","./DOMPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/LinkedValueUtils.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultBatchingStrategy.js":[function(require,module,exports){
+},{"./AutoFocusMixin":7,"./DOMPropertyOperations":17,"./LinkedValueUtils":29,"./ReactBrowserComponentMixin":34,"./ReactCompositeComponent":39,"./ReactDOM":42,"./invariant":126,"./merge":136,"./warning":149,"_process":151}],53:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -9052,7 +9052,7 @@ var ReactDefaultBatchingStrategy = {
 
 module.exports = ReactDefaultBatchingStrategy;
 
-},{"./ReactUpdates":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactUpdates.js","./Transaction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultInjection.js":[function(require,module,exports){
+},{"./ReactUpdates":82,"./Transaction":98,"./emptyFunction":108,"./mixInto":139}],54:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -9184,7 +9184,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ChangeEventPlugin.js","./ClientReactRootIndex":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ClientReactRootIndex.js","./CompositionEventPlugin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CompositionEventPlugin.js","./DefaultEventPluginOrder":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EnterLeaveEventPlugin.js","./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./HTMLDOMPropertyConfig":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/HTMLDOMPropertyConfig.js","./MobileSafariClickEventPlugin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/MobileSafariClickEventPlugin.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponentBrowserEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponentBrowserEnvironment.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./ReactDOMButton":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMButton.js","./ReactDOMForm":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMForm.js","./ReactDOMImg":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMImg.js","./ReactDOMInput":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMTextarea.js","./ReactDefaultBatchingStrategy":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultBatchingStrategy.js","./ReactDefaultPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultPerf.js","./ReactEventListener":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEventListener.js","./ReactInjection":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInjection.js","./ReactInstanceHandles":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./SVGDOMPropertyConfig":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SelectEventPlugin.js","./ServerReactRootIndex":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ServerReactRootIndex.js","./SimpleEventPlugin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SimpleEventPlugin.js","./createFullPageComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/createFullPageComponent.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultPerf.js":[function(require,module,exports){
+},{"./BeforeInputEventPlugin":8,"./ChangeEventPlugin":12,"./ClientReactRootIndex":13,"./CompositionEventPlugin":14,"./DefaultEventPluginOrder":19,"./EnterLeaveEventPlugin":20,"./ExecutionEnvironment":27,"./HTMLDOMPropertyConfig":28,"./MobileSafariClickEventPlugin":31,"./ReactBrowserComponentMixin":34,"./ReactComponentBrowserEnvironment":38,"./ReactDOM":42,"./ReactDOMButton":43,"./ReactDOMForm":45,"./ReactDOMImg":47,"./ReactDOMInput":48,"./ReactDOMOption":49,"./ReactDOMSelect":50,"./ReactDOMTextarea":52,"./ReactDefaultBatchingStrategy":53,"./ReactDefaultPerf":55,"./ReactEventListener":62,"./ReactInjection":63,"./ReactInstanceHandles":65,"./ReactMount":67,"./SVGDOMPropertyConfig":83,"./SelectEventPlugin":84,"./ServerReactRootIndex":85,"./SimpleEventPlugin":86,"./createFullPageComponent":105,"_process":151}],55:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -9447,7 +9447,7 @@ var ReactDefaultPerf = {
 
 module.exports = ReactDefaultPerf;
 
-},{"./DOMProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js","./ReactDefaultPerfAnalysis":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultPerfAnalysis.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./performanceNow":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/performanceNow.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDefaultPerfAnalysis.js":[function(require,module,exports){
+},{"./DOMProperty":16,"./ReactDefaultPerfAnalysis":56,"./ReactMount":67,"./ReactPerf":71,"./performanceNow":143}],56:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -9652,7 +9652,7 @@ var ReactDefaultPerfAnalysis = {
 
 module.exports = ReactDefaultPerfAnalysis;
 
-},{"./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js":[function(require,module,exports){
+},{"./merge":136}],57:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014 Facebook, Inc.
@@ -9907,7 +9907,7 @@ ReactDescriptor.isValidDescriptor = function(object) {
 module.exports = ReactDescriptor;
 
 }).call(this,require('_process'))
-},{"./ReactContext":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactContext.js","./ReactCurrentOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCurrentOwner.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptorValidator.js":[function(require,module,exports){
+},{"./ReactContext":40,"./ReactCurrentOwner":41,"./merge":136,"./warning":149,"_process":151}],58:[function(require,module,exports){
 /**
  * Copyright 2014 Facebook, Inc.
  *
@@ -10192,7 +10192,7 @@ var ReactDescriptorValidator = {
 
 module.exports = ReactDescriptorValidator;
 
-},{"./ReactCurrentOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCurrentOwner.js","./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactPropTypeLocations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypeLocations.js","./monitorCodeUse":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/monitorCodeUse.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEmptyComponent.js":[function(require,module,exports){
+},{"./ReactCurrentOwner":41,"./ReactDescriptor":57,"./ReactPropTypeLocations":74,"./monitorCodeUse":140}],59:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014 Facebook, Inc.
@@ -10274,7 +10274,7 @@ var ReactEmptyComponent = {
 module.exports = ReactEmptyComponent;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactErrorUtils.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],60:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -10313,7 +10313,7 @@ var ReactErrorUtils = {
 
 module.exports = ReactErrorUtils;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEventEmitterMixin.js":[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -10370,7 +10370,7 @@ var ReactEventEmitterMixin = {
 
 module.exports = ReactEventEmitterMixin;
 
-},{"./EventPluginHub":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginHub.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEventListener.js":[function(require,module,exports){
+},{"./EventPluginHub":23}],62:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -10561,7 +10561,7 @@ var ReactEventListener = {
 
 module.exports = ReactEventListener;
 
-},{"./EventListener":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventListener.js","./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./ReactInstanceHandles":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInstanceHandles.js","./ReactMount":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js","./ReactUpdates":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactUpdates.js","./getEventTarget":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventTarget.js","./getUnboundedScrollPosition":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getUnboundedScrollPosition.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInjection.js":[function(require,module,exports){
+},{"./EventListener":22,"./ExecutionEnvironment":27,"./PooledClass":32,"./ReactInstanceHandles":65,"./ReactMount":67,"./ReactUpdates":82,"./getEventTarget":117,"./getUnboundedScrollPosition":122,"./mixInto":139}],63:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -10608,7 +10608,7 @@ var ReactInjection = {
 
 module.exports = ReactInjection;
 
-},{"./DOMProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js","./EventPluginHub":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginHub.js","./ReactBrowserEventEmitter":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponent.js","./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./ReactDOM":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOM.js","./ReactEmptyComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactEmptyComponent.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./ReactRootIndex":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactRootIndex.js","./ReactUpdates":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactUpdates.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInputSelection.js":[function(require,module,exports){
+},{"./DOMProperty":16,"./EventPluginHub":23,"./ReactBrowserEventEmitter":35,"./ReactComponent":37,"./ReactCompositeComponent":39,"./ReactDOM":42,"./ReactEmptyComponent":59,"./ReactPerf":71,"./ReactRootIndex":78,"./ReactUpdates":82}],64:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -10751,7 +10751,7 @@ var ReactInputSelection = {
 
 module.exports = ReactInputSelection;
 
-},{"./ReactDOMSelection":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDOMSelection.js","./containsNode":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/containsNode.js","./focusNode":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/focusNode.js","./getActiveElement":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getActiveElement.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInstanceHandles.js":[function(require,module,exports){
+},{"./ReactDOMSelection":51,"./containsNode":102,"./focusNode":112,"./getActiveElement":114}],65:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -11093,7 +11093,7 @@ var ReactInstanceHandles = {
 module.exports = ReactInstanceHandles;
 
 }).call(this,require('_process'))
-},{"./ReactRootIndex":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactRootIndex.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMarkupChecksum.js":[function(require,module,exports){
+},{"./ReactRootIndex":78,"./invariant":126,"_process":151}],66:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -11148,7 +11148,7 @@ var ReactMarkupChecksum = {
 
 module.exports = ReactMarkupChecksum;
 
-},{"./adler32":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/adler32.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMount.js":[function(require,module,exports){
+},{"./adler32":101}],67:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -11833,7 +11833,7 @@ var ReactMount = {
 module.exports = ReactMount;
 
 }).call(this,require('_process'))
-},{"./DOMProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js","./ReactBrowserEventEmitter":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactCurrentOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCurrentOwner.js","./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactInstanceHandles":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInstanceHandles.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./containsNode":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/containsNode.js","./getReactRootElementInContainer":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getReactRootElementInContainer.js","./instantiateReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./shouldUpdateReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/shouldUpdateReactComponent.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMultiChild.js":[function(require,module,exports){
+},{"./DOMProperty":16,"./ReactBrowserEventEmitter":35,"./ReactCurrentOwner":41,"./ReactDescriptor":57,"./ReactInstanceHandles":65,"./ReactPerf":71,"./containsNode":102,"./getReactRootElementInContainer":120,"./instantiateReactComponent":125,"./invariant":126,"./shouldUpdateReactComponent":146,"./warning":149,"_process":151}],68:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -12265,7 +12265,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 
-},{"./ReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponent.js","./ReactMultiChildUpdateTypes":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMultiChildUpdateTypes.js","./flattenChildren":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/flattenChildren.js","./instantiateReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/shouldUpdateReactComponent.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMultiChildUpdateTypes.js":[function(require,module,exports){
+},{"./ReactComponent":37,"./ReactMultiChildUpdateTypes":69,"./flattenChildren":111,"./instantiateReactComponent":125,"./shouldUpdateReactComponent":146}],69:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -12305,7 +12305,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 
 module.exports = ReactMultiChildUpdateTypes;
 
-},{"./keyMirror":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactOwner.js":[function(require,module,exports){
+},{"./keyMirror":132}],70:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -12468,7 +12468,7 @@ var ReactOwner = {
 module.exports = ReactOwner;
 
 }).call(this,require('_process'))
-},{"./emptyObject":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyObject.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js":[function(require,module,exports){
+},{"./emptyObject":109,"./invariant":126,"_process":151}],71:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -12557,7 +12557,7 @@ function _noMeasure(objName, fnName, func) {
 module.exports = ReactPerf;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTransferer.js":[function(require,module,exports){
+},{"_process":151}],72:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -12723,7 +12723,7 @@ var ReactPropTransferer = {
 module.exports = ReactPropTransferer;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./joinClasses":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/joinClasses.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(require,module,exports){
+},{"./emptyFunction":108,"./invariant":126,"./joinClasses":131,"./merge":136,"_process":151}],73:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -12758,7 +12758,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = ReactPropTypeLocationNames;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypeLocations.js":[function(require,module,exports){
+},{"_process":151}],74:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -12789,7 +12789,7 @@ var ReactPropTypeLocations = keyMirror({
 
 module.exports = ReactPropTypeLocations;
 
-},{"./keyMirror":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypes.js":[function(require,module,exports){
+},{"./keyMirror":132}],75:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -13134,7 +13134,7 @@ function getPreciseType(propValue) {
 
 module.exports = ReactPropTypes;
 
-},{"./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactPropTypeLocationNames":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPropTypeLocationNames.js","./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPutListenerQueue.js":[function(require,module,exports){
+},{"./ReactDescriptor":57,"./ReactPropTypeLocationNames":73,"./emptyFunction":108}],76:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -13197,7 +13197,7 @@ PooledClass.addPoolingTo(ReactPutListenerQueue);
 
 module.exports = ReactPutListenerQueue;
 
-},{"./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserEventEmitter.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactReconcileTransaction.js":[function(require,module,exports){
+},{"./PooledClass":32,"./ReactBrowserEventEmitter":35,"./mixInto":139}],77:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -13381,7 +13381,7 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
 
-},{"./CallbackQueue":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CallbackQueue.js","./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserEventEmitter.js","./ReactInputSelection":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInputSelection.js","./ReactPutListenerQueue":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/Transaction.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactRootIndex.js":[function(require,module,exports){
+},{"./CallbackQueue":11,"./PooledClass":32,"./ReactBrowserEventEmitter":35,"./ReactInputSelection":64,"./ReactPutListenerQueue":76,"./Transaction":98,"./mixInto":139}],78:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -13419,7 +13419,7 @@ var ReactRootIndex = {
 
 module.exports = ReactRootIndex;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactServerRendering.js":[function(require,module,exports){
+},{}],79:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -13512,7 +13512,7 @@ module.exports = {
 };
 
 }).call(this,require('_process'))
-},{"./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./ReactInstanceHandles":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInstanceHandles.js","./ReactMarkupChecksum":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactMarkupChecksum.js","./ReactServerRenderingTransaction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactServerRenderingTransaction.js","./instantiateReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/instantiateReactComponent.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactServerRenderingTransaction.js":[function(require,module,exports){
+},{"./ReactDescriptor":57,"./ReactInstanceHandles":65,"./ReactMarkupChecksum":66,"./ReactServerRenderingTransaction":80,"./instantiateReactComponent":125,"./invariant":126,"_process":151}],80:[function(require,module,exports){
 /**
  * Copyright 2014 Facebook, Inc.
  *
@@ -13629,7 +13629,7 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
 
-},{"./CallbackQueue":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CallbackQueue.js","./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./ReactPutListenerQueue":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPutListenerQueue.js","./Transaction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/Transaction.js","./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactTextComponent.js":[function(require,module,exports){
+},{"./CallbackQueue":11,"./PooledClass":32,"./ReactPutListenerQueue":76,"./Transaction":98,"./emptyFunction":108,"./mixInto":139}],81:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -13738,7 +13738,7 @@ mixInto(ReactTextComponent, {
 
 module.exports = ReactDescriptor.createFactory(ReactTextComponent);
 
-},{"./DOMPropertyOperations":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMPropertyOperations.js","./ReactBrowserComponentMixin":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactBrowserComponentMixin.js","./ReactComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactComponent.js","./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./escapeTextForBrowser":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/escapeTextForBrowser.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactUpdates.js":[function(require,module,exports){
+},{"./DOMPropertyOperations":17,"./ReactBrowserComponentMixin":34,"./ReactComponent":37,"./ReactDescriptor":57,"./escapeTextForBrowser":110,"./mixInto":139}],82:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -14007,7 +14007,7 @@ var ReactUpdates = {
 module.exports = ReactUpdates;
 
 }).call(this,require('_process'))
-},{"./CallbackQueue":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CallbackQueue.js","./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./ReactCurrentOwner":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCurrentOwner.js","./ReactPerf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactPerf.js","./Transaction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/Transaction.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./mixInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SVGDOMPropertyConfig.js":[function(require,module,exports){
+},{"./CallbackQueue":11,"./PooledClass":32,"./ReactCurrentOwner":41,"./ReactPerf":71,"./Transaction":98,"./invariant":126,"./mixInto":139,"./warning":149,"_process":151}],83:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -14106,7 +14106,7 @@ var SVGDOMPropertyConfig = {
 
 module.exports = SVGDOMPropertyConfig;
 
-},{"./DOMProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/DOMProperty.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SelectEventPlugin.js":[function(require,module,exports){
+},{"./DOMProperty":16}],84:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -14308,7 +14308,7 @@ var SelectEventPlugin = {
 
 module.exports = SelectEventPlugin;
 
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPropagators":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPropagators.js","./ReactInputSelection":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js","./getActiveElement":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getActiveElement.js","./isTextInputElement":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isTextInputElement.js","./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js","./shallowEqual":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/shallowEqual.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ServerReactRootIndex.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPropagators":26,"./ReactInputSelection":64,"./SyntheticEvent":90,"./getActiveElement":114,"./isTextInputElement":129,"./keyOf":133,"./shallowEqual":145}],85:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -14346,7 +14346,7 @@ var ServerReactRootIndex = {
 
 module.exports = ServerReactRootIndex;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SimpleEventPlugin.js":[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -14769,7 +14769,7 @@ var SimpleEventPlugin = {
 module.exports = SimpleEventPlugin;
 
 }).call(this,require('_process'))
-},{"./EventConstants":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventConstants.js","./EventPluginUtils":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPluginUtils.js","./EventPropagators":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/EventPropagators.js","./SyntheticClipboardEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticTouchEvent.js","./SyntheticUIEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticWheelEvent.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./keyOf":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticClipboardEvent.js":[function(require,module,exports){
+},{"./EventConstants":21,"./EventPluginUtils":25,"./EventPropagators":26,"./SyntheticClipboardEvent":87,"./SyntheticDragEvent":89,"./SyntheticEvent":90,"./SyntheticFocusEvent":91,"./SyntheticKeyboardEvent":93,"./SyntheticMouseEvent":94,"./SyntheticTouchEvent":95,"./SyntheticUIEvent":96,"./SyntheticWheelEvent":97,"./invariant":126,"./keyOf":133,"_process":151}],87:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -14822,7 +14822,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 
-},{"./SyntheticEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticCompositionEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":90}],88:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -14875,7 +14875,7 @@ SyntheticEvent.augmentClass(
 module.exports = SyntheticCompositionEvent;
 
 
-},{"./SyntheticEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticDragEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":90}],89:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -14921,7 +14921,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
 
-},{"./SyntheticMouseEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":94}],90:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15087,7 +15087,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.threeArgumentPooler);
 
 module.exports = SyntheticEvent;
 
-},{"./PooledClass":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/PooledClass.js","./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js","./getEventTarget":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventTarget.js","./merge":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js","./mergeInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mergeInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticFocusEvent.js":[function(require,module,exports){
+},{"./PooledClass":32,"./emptyFunction":108,"./getEventTarget":117,"./merge":136,"./mergeInto":138}],91:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15133,7 +15133,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
 
-},{"./SyntheticUIEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticUIEvent.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticInputEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":96}],92:[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
  *
@@ -15187,7 +15187,7 @@ SyntheticEvent.augmentClass(
 module.exports = SyntheticInputEvent;
 
 
-},{"./SyntheticEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticKeyboardEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":90}],93:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15276,7 +15276,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
 
-},{"./SyntheticUIEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticUIEvent.js","./getEventKey":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventKey.js","./getEventModifierState":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventModifierState.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticMouseEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":96,"./getEventKey":115,"./getEventModifierState":116}],94:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15366,7 +15366,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
 
-},{"./SyntheticUIEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ViewportMetrics.js","./getEventModifierState":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventModifierState.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticTouchEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":96,"./ViewportMetrics":99,"./getEventModifierState":116}],95:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15421,7 +15421,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
 
-},{"./SyntheticUIEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventModifierState.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticUIEvent.js":[function(require,module,exports){
+},{"./SyntheticUIEvent":96,"./getEventModifierState":116}],96:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15490,7 +15490,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
 
-},{"./SyntheticEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticEvent.js","./getEventTarget":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventTarget.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticWheelEvent.js":[function(require,module,exports){
+},{"./SyntheticEvent":90,"./getEventTarget":117}],97:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15558,7 +15558,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
 
-},{"./SyntheticMouseEvent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/SyntheticMouseEvent.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/Transaction.js":[function(require,module,exports){
+},{"./SyntheticMouseEvent":94}],98:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -15806,7 +15806,7 @@ var Transaction = {
 module.exports = Transaction;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ViewportMetrics.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],99:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15845,7 +15845,7 @@ var ViewportMetrics = {
 
 module.exports = ViewportMetrics;
 
-},{"./getUnboundedScrollPosition":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getUnboundedScrollPosition.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/accumulate.js":[function(require,module,exports){
+},{"./getUnboundedScrollPosition":122}],100:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -15903,7 +15903,7 @@ function accumulate(current, next) {
 module.exports = accumulate;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/adler32.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],101:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15944,7 +15944,7 @@ function adler32(data) {
 
 module.exports = adler32;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/containsNode.js":[function(require,module,exports){
+},{}],102:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -15995,7 +15995,7 @@ function containsNode(outerNode, innerNode) {
 
 module.exports = containsNode;
 
-},{"./isTextNode":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isTextNode.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/copyProperties.js":[function(require,module,exports){
+},{"./isTextNode":130}],103:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -16053,7 +16053,7 @@ function copyProperties(obj, a, b, c, d, e, f) {
 module.exports = copyProperties;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/createArrayFrom.js":[function(require,module,exports){
+},{"_process":151}],104:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -16146,7 +16146,7 @@ function createArrayFrom(obj) {
 
 module.exports = createArrayFrom;
 
-},{"./toArray":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/toArray.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/createFullPageComponent.js":[function(require,module,exports){
+},{"./toArray":147}],105:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -16213,7 +16213,7 @@ function createFullPageComponent(componentClass) {
 module.exports = createFullPageComponent;
 
 }).call(this,require('_process'))
-},{"./ReactCompositeComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactCompositeComponent.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/createNodesFromMarkup.js":[function(require,module,exports){
+},{"./ReactCompositeComponent":39,"./invariant":126,"_process":151}],106:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -16310,7 +16310,7 @@ function createNodesFromMarkup(markup, handleScript) {
 module.exports = createNodesFromMarkup;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./createArrayFrom":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/createArrayFrom.js","./getMarkupWrap":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getMarkupWrap.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/dangerousStyleValue.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27,"./createArrayFrom":104,"./getMarkupWrap":118,"./invariant":126,"_process":151}],107:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -16375,7 +16375,7 @@ function dangerousStyleValue(name, value) {
 
 module.exports = dangerousStyleValue;
 
-},{"./CSSProperty":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/CSSProperty.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js":[function(require,module,exports){
+},{"./CSSProperty":9}],108:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -16420,7 +16420,7 @@ copyProperties(emptyFunction, {
 
 module.exports = emptyFunction;
 
-},{"./copyProperties":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/copyProperties.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyObject.js":[function(require,module,exports){
+},{"./copyProperties":103}],109:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -16451,7 +16451,7 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = emptyObject;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/escapeTextForBrowser.js":[function(require,module,exports){
+},{"_process":151}],110:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -16499,7 +16499,7 @@ function escapeTextForBrowser(text) {
 
 module.exports = escapeTextForBrowser;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/flattenChildren.js":[function(require,module,exports){
+},{}],111:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -16562,7 +16562,7 @@ function flattenChildren(children) {
 module.exports = flattenChildren;
 
 }).call(this,require('_process'))
-},{"./traverseAllChildren":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/traverseAllChildren.js","./warning":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/focusNode.js":[function(require,module,exports){
+},{"./traverseAllChildren":148,"./warning":149,"_process":151}],112:[function(require,module,exports){
 /**
  * Copyright 2014 Facebook, Inc.
  *
@@ -16597,7 +16597,7 @@ function focusNode(node) {
 
 module.exports = focusNode;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/forEachAccumulated.js":[function(require,module,exports){
+},{}],113:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -16635,7 +16635,7 @@ var forEachAccumulated = function(arr, cb, scope) {
 
 module.exports = forEachAccumulated;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getActiveElement.js":[function(require,module,exports){
+},{}],114:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -16671,7 +16671,7 @@ function getActiveElement() /*?DOMElement*/ {
 
 module.exports = getActiveElement;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventKey.js":[function(require,module,exports){
+},{}],115:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -16790,7 +16790,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventModifierState.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],116:[function(require,module,exports){
 /**
  * Copyright 2013 Facebook, Inc.
  *
@@ -16844,7 +16844,7 @@ function getEventModifierState(nativeEvent) {
 
 module.exports = getEventModifierState;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getEventTarget.js":[function(require,module,exports){
+},{}],117:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -16882,7 +16882,7 @@ function getEventTarget(nativeEvent) {
 
 module.exports = getEventTarget;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getMarkupWrap.js":[function(require,module,exports){
+},{}],118:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -17006,7 +17006,7 @@ function getMarkupWrap(nodeName) {
 module.exports = getMarkupWrap;
 
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getNodeForCharacterOffset.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27,"./invariant":126,"_process":151}],119:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17088,7 +17088,7 @@ function getNodeForCharacterOffset(root, offset) {
 
 module.exports = getNodeForCharacterOffset;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getReactRootElementInContainer.js":[function(require,module,exports){
+},{}],120:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17130,7 +17130,7 @@ function getReactRootElementInContainer(container) {
 
 module.exports = getReactRootElementInContainer;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getTextContentAccessor.js":[function(require,module,exports){
+},{}],121:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17174,7 +17174,7 @@ function getTextContentAccessor() {
 
 module.exports = getTextContentAccessor;
 
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/getUnboundedScrollPosition.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27}],122:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17221,7 +17221,7 @@ function getUnboundedScrollPosition(scrollable) {
 
 module.exports = getUnboundedScrollPosition;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/hyphenate.js":[function(require,module,exports){
+},{}],123:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17261,7 +17261,7 @@ function hyphenate(string) {
 
 module.exports = hyphenate;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/hyphenateStyleName.js":[function(require,module,exports){
+},{}],124:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17309,7 +17309,7 @@ function hyphenateStyleName(string) {
 
 module.exports = hyphenateStyleName;
 
-},{"./hyphenate":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/hyphenate.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/instantiateReactComponent.js":[function(require,module,exports){
+},{"./hyphenate":123}],125:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -17375,7 +17375,7 @@ function instantiateReactComponent(descriptor) {
 module.exports = instantiateReactComponent;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],126:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -17439,7 +17439,7 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 }).call(this,require('_process'))
-},{"_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isEventSupported.js":[function(require,module,exports){
+},{"_process":151}],127:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17511,7 +17511,7 @@ function isEventSupported(eventNameSuffix, capture) {
 
 module.exports = isEventSupported;
 
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isNode.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27}],128:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17546,7 +17546,7 @@ function isNode(object) {
 
 module.exports = isNode;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isTextInputElement.js":[function(require,module,exports){
+},{}],129:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17597,7 +17597,7 @@ function isTextInputElement(elem) {
 
 module.exports = isTextInputElement;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isTextNode.js":[function(require,module,exports){
+},{}],130:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17629,7 +17629,7 @@ function isTextNode(object) {
 
 module.exports = isTextNode;
 
-},{"./isNode":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/isNode.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/joinClasses.js":[function(require,module,exports){
+},{"./isNode":128}],131:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17675,7 +17675,7 @@ function joinClasses(className/*, ... */) {
 
 module.exports = joinClasses;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js":[function(require,module,exports){
+},{}],132:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -17737,7 +17737,7 @@ var keyMirror = function(obj) {
 module.exports = keyMirror;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyOf.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],133:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17780,7 +17780,7 @@ var keyOf = function(oneKeyObj) {
 
 module.exports = keyOf;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mapObject.js":[function(require,module,exports){
+},{}],134:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17834,7 +17834,7 @@ function mapObject(obj, func, context) {
 
 module.exports = mapObject;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/memoizeStringOnly.js":[function(require,module,exports){
+},{}],135:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17875,7 +17875,7 @@ function memoizeStringOnly(callback) {
 
 module.exports = memoizeStringOnly;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/merge.js":[function(require,module,exports){
+},{}],136:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -17914,7 +17914,7 @@ var merge = function(one, two) {
 
 module.exports = merge;
 
-},{"./mergeInto":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mergeInto.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mergeHelpers.js":[function(require,module,exports){
+},{"./mergeInto":138}],137:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -18065,7 +18065,7 @@ var mergeHelpers = {
 module.exports = mergeHelpers;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","./keyMirror":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/keyMirror.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mergeInto.js":[function(require,module,exports){
+},{"./invariant":126,"./keyMirror":132,"_process":151}],138:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -18113,7 +18113,7 @@ function mergeInto(one, two) {
 
 module.exports = mergeInto;
 
-},{"./mergeHelpers":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mergeHelpers.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/mixInto.js":[function(require,module,exports){
+},{"./mergeHelpers":137}],139:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -18149,7 +18149,7 @@ var mixInto = function(constructor, methodBag) {
 
 module.exports = mixInto;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/monitorCodeUse.js":[function(require,module,exports){
+},{}],140:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014 Facebook, Inc.
@@ -18190,7 +18190,7 @@ function monitorCodeUse(eventName, data) {
 module.exports = monitorCodeUse;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/onlyChild.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],141:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -18237,7 +18237,7 @@ function onlyChild(children) {
 module.exports = onlyChild;
 
 }).call(this,require('_process'))
-},{"./ReactDescriptor":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactDescriptor.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/performance.js":[function(require,module,exports){
+},{"./ReactDescriptor":57,"./invariant":126,"_process":151}],142:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -18272,7 +18272,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = performance || {};
 
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/performanceNow.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27}],143:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -18307,7 +18307,7 @@ var performanceNow = performance.now.bind(performance);
 
 module.exports = performanceNow;
 
-},{"./performance":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/performance.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/setInnerHTML.js":[function(require,module,exports){
+},{"./performance":142}],144:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -18394,7 +18394,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
 module.exports = setInnerHTML;
 
-},{"./ExecutionEnvironment":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ExecutionEnvironment.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/shallowEqual.js":[function(require,module,exports){
+},{"./ExecutionEnvironment":27}],145:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -18445,7 +18445,7 @@ function shallowEqual(objA, objB) {
 
 module.exports = shallowEqual;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/shouldUpdateReactComponent.js":[function(require,module,exports){
+},{}],146:[function(require,module,exports){
 /**
  * Copyright 2013-2014 Facebook, Inc.
  *
@@ -18491,7 +18491,7 @@ function shouldUpdateReactComponent(prevDescriptor, nextDescriptor) {
 
 module.exports = shouldUpdateReactComponent;
 
-},{}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/toArray.js":[function(require,module,exports){
+},{}],147:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014 Facebook, Inc.
@@ -18570,7 +18570,7 @@ function toArray(obj) {
 module.exports = toArray;
 
 }).call(this,require('_process'))
-},{"./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/traverseAllChildren.js":[function(require,module,exports){
+},{"./invariant":126,"_process":151}],148:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2014 Facebook, Inc.
@@ -18767,7 +18767,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 module.exports = traverseAllChildren;
 
 }).call(this,require('_process'))
-},{"./ReactInstanceHandles":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactInstanceHandles.js","./ReactTextComponent":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/ReactTextComponent.js","./invariant":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/invariant.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/warning.js":[function(require,module,exports){
+},{"./ReactInstanceHandles":65,"./ReactTextComponent":81,"./invariant":126,"_process":151}],149:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014 Facebook, Inc.
@@ -18819,53 +18819,47 @@ if ("production" !== process.env.NODE_ENV) {
 module.exports = warning;
 
 }).call(this,require('_process'))
-},{"./emptyFunction":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/emptyFunction.js","_process":"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/react/react.js":[function(require,module,exports){
+},{"./emptyFunction":108,"_process":151}],150:[function(require,module,exports){
 module.exports = require('./lib/React');
 
-},{"./lib/React":"/Users/nickbdyer/projects/react_tutorial/node_modules/react/lib/React.js"}],"/Users/nickbdyer/projects/react_tutorial/node_modules/watchify/node_modules/browserify/node_modules/process/browser.js":[function(require,module,exports){
+},{"./lib/React":33}],151:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
+var queue = [];
+var draining = false;
 
-process.nextTick = (function () {
-    var canSetImmediate = typeof window !== 'undefined'
-    && window.setImmediate;
-    var canPost = typeof window !== 'undefined'
-    && window.postMessage && window.addEventListener
-    ;
-
-    if (canSetImmediate) {
-        return function (f) { return window.setImmediate(f) };
+function drainQueue() {
+    if (draining) {
+        return;
     }
-
-    if (canPost) {
-        var queue = [];
-        window.addEventListener('message', function (ev) {
-            var source = ev.source;
-            if ((source === window || source === null) && ev.data === 'process-tick') {
-                ev.stopPropagation();
-                if (queue.length > 0) {
-                    var fn = queue.shift();
-                    fn();
-                }
-            }
-        }, true);
-
-        return function nextTick(fn) {
-            queue.push(fn);
-            window.postMessage('process-tick', '*');
-        };
+    draining = true;
+    var currentQueue;
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        var i = -1;
+        while (++i < len) {
+            currentQueue[i]();
+        }
+        len = queue.length;
     }
-
-    return function nextTick(fn) {
-        setTimeout(fn, 0);
-    };
-})();
+    draining = false;
+}
+process.nextTick = function (fun) {
+    queue.push(fun);
+    if (!draining) {
+        setTimeout(drainQueue, 0);
+    }
+};
 
 process.title = 'browser';
 process.browser = true;
 process.env = {};
 process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
 
 function noop() {}
 
@@ -18879,12 +18873,13 @@ process.emit = noop;
 
 process.binding = function (name) {
     throw new Error('process.binding is not supported');
-}
+};
 
 // TODO(shtylman)
 process.cwd = function () { return '/' };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
+process.umask = function() { return 0; };
 
-},{}]},{},["/Users/nickbdyer/projects/react_tutorial/app.js"]);
+},{}]},{},[1]);

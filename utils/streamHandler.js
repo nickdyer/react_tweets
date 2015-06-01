@@ -2,10 +2,11 @@ var Tweet = require('../models/Tweet');
 
 module.exports = function(stream,io) {
 
-  stream.on('data', function(data) {
+  stream.on('tweet', function(data) {
+    console.log(data);
 
     var tweet = {
-      twid: data[id], 
+      twid: data['id'], 
       active: false, 
       author: data['user']['name'],
       avatar: data['user']['profile_image_url'],

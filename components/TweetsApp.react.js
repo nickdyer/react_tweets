@@ -80,7 +80,7 @@ module.exports = TweetsApp = React.createClass({
   checkWindowScroll: function() {
 
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    var s = documetn.body.scrollTop;
+    var s = document.body.scrollTop;
     var scrolled = (h + s) > document.body.offsetHeight;
 
     if(scrolled && !this.state.paging && !this.state.done) {
