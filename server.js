@@ -2,7 +2,7 @@ var express = require('express'),
     exphbs = require('express-handlebars'),
     http = require('http'),
     mongoose = require('mongoose'),
-    twitter = require('ntwitter'),
+    Twit = require('twit'),
     routes = require('./routes'),
     config = require('./config'),
     streamHandler = require('./utils/streamHandler');
@@ -17,7 +17,7 @@ app.disable('etag');
 
 mongoose.connect('mongodb://localhost/react-tweets');
 
-var twit = new twitter(config.twitter);
+var T = new Twit(config.twitter);
 
 app.get('/', routes.index);
 
@@ -31,7 +31,7 @@ var server = http.createServer(app).listen(port, function() {
 
 var io = require('socket.io').listen(server);
 
-twit.stream('statuses/filter',{ track: 'scotch_io, #scotchio'}, function(stream) {
+T.stream('statuses/filter',{ track: 'scotch_io, #scotchio'}, function(stream) {
   streamHandler(stream, io);
 });
 
