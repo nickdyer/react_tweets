@@ -3,7 +3,6 @@ var Tweet = require('../models/Tweet');
 module.exports = function(stream,io) {
 
   stream.on('tweet', function(data) {
-    console.log(data);
 
     var tweet = {
       twid: data['id'], 

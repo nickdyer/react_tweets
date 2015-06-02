@@ -31,7 +31,7 @@ var server = http.createServer(app).listen(port, function() {
 
 var io = require('socket.io').listen(server);
 
-var stream = T.stream('statuses/filter', { track: '#BBCNews' });
+var stream = T.stream('statuses/filter', { track: '#javascript' });
 
 streamHandler(stream, io);
 
